@@ -59,10 +59,10 @@ let allArticles = await articlesWithOGData(articles);
           {allArticles.map((article) => (
             <li>
               <article>
-                <a href={article.url}>
+                <a href={article.url} target="_blank">
                   <h2>{article?.ogTitle}</h2>
                 </a>
-                <img src={article?.ogImage} alt="" />
+                <img src={article?.ogImage} alt={article?.ogTitle} />
               </article>
             </li>
           ))}
