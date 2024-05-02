@@ -36,6 +36,7 @@ To deploy and set up your Functions, you need to:
         }
     ```
 - in `/src/pages/index.astro` you can display the stories on a webpage
+
   ```astro
   async function fetchOGData(url) {
   try {
@@ -53,15 +54,16 @@ To deploy and set up your Functions, you need to:
   }
 }
 ```
----
+
 
 To get started quickly with this code, clone the repo, run `npm install` and `npm run dev`
 
 nothing might show on the screen, why?
 
 You need to create a `.env` file and have the following:
-```
-# RPC for sepolia
+
+```bash
+#### RPC for sepolia
 PROVIDER_URL="https://rpc.sepolia.org"
 CONTRACT_ADDRESS="your-contract-address"
 ```
@@ -70,4 +72,3 @@ Follow this [article](https://cll-devrel.gitbook.io/javascript-for-blockchain-ma
 
 > This repo is just the frontend Dapp that interact with the smart contract using `ether-js`.
 
-::bulb cheers
